@@ -32,8 +32,8 @@ contract CertificateLedger
     
     function createNewPair(uint Rid, uint RHealth, uint Did, uint DHealth, uint contact, uint Date)
     {
-        CertificateCount++;
         CertificateList[CertificateCount] = (Certificate(CertificateCount, Rid, RHealth, Did, DHealth, msg.sender, contact, Date, true));
+        CertificateCount++;
     }
 
     
